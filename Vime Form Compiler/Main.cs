@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.ConstrainedExecution;
+using System.Security;
 
 namespace Vime_Form_Compiler
 {
@@ -30,14 +34,34 @@ namespace Vime_Form_Compiler
                 MessageBox.Show("Пункты помеченные звездочкой - обязательны!");
             } else
             {
-                FormFinished = @"1. " + textBox3.Text + Environment.NewLine + @"2. " + textBox2.Text + Environment.NewLine + @"3. " + dateTimePicker1.Value.ToShortDateString() + Environment.NewLine + @"4. " + textBox1.Text;
+                if (Properties.Settings.Default.numbering == true)
+                {
+                    FormFinished = @"1. " + textBox3.Text + Environment.NewLine + @"2. " + textBox2.Text + Environment.NewLine + @"3. " + dateTimePicker1.Value.ToShortDateString() + Environment.NewLine + @"4. " + textBox1.Text;
+                } else
+                {
+                    FormFinished =  textBox3.Text + Environment.NewLine + textBox2.Text + Environment.NewLine + dateTimePicker1.Value.ToShortDateString() + Environment.NewLine + textBox1.Text;
+                }
+
+                
                 if (comboBox1.Text != "")
                 {
-                    FormFinished +=  Environment.NewLine + @"5. ".ToString() + comboBox1.Text.ToString();
+                    if (Properties.Settings.Default.numbering == true)
+                    {
+                        FormFinished += Environment.NewLine + @"5. ".ToString() + comboBox1.Text.ToString();
+                    } else
+                    {
+                        FormFinished += Environment.NewLine + comboBox1.Text.ToString();
+                    }
                 }
                 if (textBox4.Text != "")
                 {
-                    FormFinished += Environment.NewLine + @"6. ".ToString() + textBox4.Text;
+                    if (Properties.Settings.Default.numbering == true)
+                    {
+                        FormFinished += Environment.NewLine + @"6. ".ToString() + textBox4.Text;
+                    } else
+                    {
+                        FormFinished += Environment.NewLine + textBox4.Text;
+                    }
                 }
                 if (comboBox1.Text == "Оскорбление проекта/сервера")
                 {
@@ -63,6 +87,10 @@ namespace Vime_Form_Compiler
                 {
                     FormFinished += Environment.NewLine + "/ban " + textBox3.Text + " 0 Политическая агитация";
                 }
+                if (textBox2.Text == "_bellyache" || textBox2.Text == "Hastyxa_YT" || textBox2.Text == "xtrafrancyz")
+                {
+                    MessageBox.Show("Привет, " + textBox2.Text.ToString());
+                }
                 textBox5.Text = FormFinished;
             }
         }
@@ -77,6 +105,19 @@ namespace Vime_Form_Compiler
                 Clipboard.SetText(textBox5.Text);
                 MessageBox.Show("Скопировано");
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            options A = new options();
+            A.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string PCuserName = Environment.UserName;
+            string screensPath = @"C:\Users\" + PCuserName.ToString() + @"\AppData\Roaming\.vimeworld\minigames\screenshots".ToString();
+            Process.Start(screensPath);
         }
     }
 }

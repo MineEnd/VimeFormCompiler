@@ -22,5 +22,17 @@ namespace Vime_Form_Compiler.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool numbering {
+            get {
+                return ((bool)(this["numbering"]));
+            }
+            set {
+                this["numbering"] = value;
+            }
+        }
     }
 }
