@@ -75,7 +75,7 @@ namespace Vime_Form_Compiler
             } else
             {
                 Clipboard.SetText(textBox5.Text);
-                MessageBox.Show("Скопировано!");
+                MessageBox.Show("Скопировано");
             }
         }
     }
