@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Общие сведения об этой сборке предоставляются следующим набором
-// набора атрибутов. Измените значения этих атрибутов для изменения сведений,
+// набора атрибутов. Измените значения этих атрибутов для изменния сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("Vime Form Compiler")]
 [assembly: AssemblyDescription("")]
