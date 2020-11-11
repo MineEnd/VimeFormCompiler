@@ -34,5 +34,17 @@ namespace Vime_Form_Compiler.Properties {
                 this["numbering"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AddPunishmentCommand {
+            get {
+                return ((bool)(this["AddPunishmentCommand"]));
+            }
+            set {
+                this["AddPunishmentCommand"] = value;
+            }
+        }
     }
 }
