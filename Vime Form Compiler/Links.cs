@@ -26,7 +26,7 @@ namespace Vime_Form_Compiler
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://drop.xtrafrancyz.net");
+            System.Diagnostics.Process.Start("https://radikal.ru/");
         }
 
     }

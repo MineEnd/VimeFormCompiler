@@ -38,18 +38,18 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(81, 35);
+            this.linkLabel2.Location = new System.Drawing.Point(69, 35);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(84, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(43, 13);
             this.linkLabel2.TabIndex = 1;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "xtrafrancyz Drop";
+            this.linkLabel2.Text = "Radikal";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(123, 9);
+            this.linkLabel3.Location = new System.Drawing.Point(54, 9);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(33, 13);
             this.linkLabel3.TabIndex = 2;
@@ -73,17 +73,17 @@
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Location = new System.Drawing.Point(12, 9);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(90, 13);
+            this.linkLabel5.Size = new System.Drawing.Size(36, 13);
             this.linkLabel5.TabIndex = 4;
             this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "VimeWorld Forum";
+            this.linkLabel5.Text = "Forum";
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // Links
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(171, 60);
+            this.ClientSize = new System.Drawing.Size(163, 60);
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);

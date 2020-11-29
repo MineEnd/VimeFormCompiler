@@ -36,6 +36,9 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +70,12 @@
     <Compile Include="Links.Designer.cs">
       <DependentUpon>Links.cs</DependentUpon>
     </Compile>
+    <Compile Include="logSearcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logSearcher.Designer.cs">
+      <DependentUpon>logSearcher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +90,12 @@
     <Compile Include="options.Designer.cs">
       <DependentUpon>options.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staffgui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staffgui.Designer.cs">
+      <DependentUpon>Staffgui.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Links.resx">
       <DependentUpon>Links.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logSearcher.resx">
+      <DependentUpon>logSearcher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -105,6 +123,10 @@
     <EmbeddedResource Include="options.resx">
       <DependentUpon>options.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staffgui.resx">
+      <DependentUpon>Staffgui.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

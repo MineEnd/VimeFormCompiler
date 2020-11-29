@@ -240,5 +240,17 @@ namespace Vime_Form_Compiler
                 Clipboard.SetText(textBox6.Text);
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Staffgui N = new Staffgui();
+            N.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            logSearcher N = new logSearcher();
+            N.ShowDialog();
+        }
     }
 }
